@@ -44,7 +44,34 @@ textarea:valid {
     border-radius: 10px ;
 } 
   
+button{
+    border: 0;
+    line-height: 2;    
+    padding: 0 10px;
+    text-align: center;
+    color: #FAF4EC;
+    border-radius: 8px;
 
+} 
+
+button:hover{
+    background-color: rgb(131, 162, 172);
+}
+
+button:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.newb, .saveb{
+      background-color: #375F68;
+}
+
+.darkb{
+      background-color: #56536A;
+}
+.cancelb{
+    background-color: #9B332C;
+}
 
 /* .intro{
     text-align: right;
