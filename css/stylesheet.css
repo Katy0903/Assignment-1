@@ -1,24 +1,43 @@
-
-
-body{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-
-header, main, footer{
-    grid-column: 2/-1;
-
-}
-aside{
-    grid-column: 1/2;
-    grid-row: 1/-1;
-
-}
-
 h1, h2{
     font-size: 20px;
     margin: 10px;
     text-align: center;
+
 }
 
+body{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    background-color: #f3e9de;
+    font-family: 'Roboto Mono', monospace;
+    color: #256993;
+}
+
+header, main, footer{
+    grid-column: 2/-1;
+    text-align: center;
+}
+
+header{
+    grid-row: 1/2;
+}
+
+main{
+    grid-row: 2/6;
+}
+footer{
+    grid-row: 6/7;
+    font-weight: bold;
+}
+
+
+aside{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background-color: #faf4ec;
+}
+
+.intro{
+    text-align: right;
+}
