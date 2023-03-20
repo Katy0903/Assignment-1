@@ -3,9 +3,9 @@ h1, h2{
     font-size: 20px;
     margin: 10px;
     text-align: center;
-
 }
 
+/* making grid */
 body{
     margin:0;
     display: grid;
@@ -35,14 +35,11 @@ footer{
     font-weight: bold;
 }
 
-
 aside{
     grid-column: 1/2;
     grid-row: 1/-1;
     background-color: #faf4ec;
-
 }
-
 
 textarea{
     border: 3px solid cornflowerblue;
@@ -58,7 +55,6 @@ button{
     color: #FAF4EC;
     border-radius: 8px;
     margin: 5px;
-
 } 
 
 button:hover{
@@ -70,16 +66,15 @@ button:active{
 }
 
 .newb, .saveb{
-      background-color: #375F68;
+    background-color: #375F68;
 }
 
 .darkb{
-      background-color: #56536A;
+    background-color: #56536A;
 }
 .cancelb{
     background-color: #9B332C;
 }
-
 
 /* making flexbox */
 section{
@@ -91,8 +86,7 @@ section{
 .intro{
     flex:0 0 100%;
     text-align:right;
-    margin-right: 5px;
-   
+    margin-right: 5px; 
 }
   
 .newb {
