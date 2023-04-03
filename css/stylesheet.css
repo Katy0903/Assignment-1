@@ -48,7 +48,7 @@ textarea{
 } 
   
 button{
-    border: 0;
+    border: 2px solid #F3E9DE;;
     line-height: 2;    
     padding: 5px 10px;
     text-align: center;
@@ -131,4 +131,18 @@ section{
         margin: 0;
     }
 
+}
+
+
+
+/* with js */
+
+.darkbgbody{
+
+    background-color: #375F68;
+    color: #FAF4EC;
+}
+
+.darkbgaside{
+    background-color: #256993;
 }
