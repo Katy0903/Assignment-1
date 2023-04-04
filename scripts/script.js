@@ -50,3 +50,13 @@ function showTextAreaandButton () {
 };
 
 newButton.addEventListener("click", showTextAreaandButton);
+
+
+const notesArray = [
+    {title: "note one", body: "this is my first note"},
+    {title: "note two", body: "this is my second note"},
+    {title: "note three", body: "this is my third note"}
+];
+
+
+  
