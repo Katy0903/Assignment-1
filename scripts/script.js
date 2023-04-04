@@ -52,11 +52,30 @@ function showTextAreaandButton () {
 newButton.addEventListener("click", showTextAreaandButton);
 
 
+// note array
 const notesArray = [
     {title: "note one", body: "this is my first note"},
     {title: "note two", body: "this is my second note"},
     {title: "note three", body: "this is my third note"}
 ];
 
-
+// save note
+function saveNote() {
+    const noteBody = textArea.value;
+    const noteTitle = prompt('Please enter the title of your note:');
+  
+    if (noteTitle !== '' && noteBody !== '') {
+      
+      newNote = {title: noteTitle, body: noteBody};
+      notesArray.push(newNote);
+      const sideBarList = document.querySelector("ul")
+      const newListItem = document.createElement('li');
+      newListItem.textContent = noteTitle
+      sideBarList.appendChild(newListItem);
+   
+      textArea.value = "" ; 
+    };
+  };
+  
+  saveButton.addEventListener("click", saveNote);
   
