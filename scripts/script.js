@@ -79,3 +79,18 @@ function saveNote() {
   
   saveButton.addEventListener("click", saveNote);
   
+
+// show body
+const noteTitleList = document.querySelector("ul");
+
+function checkBody(event) {
+    const clickedItem = event.target;
+  
+    for(let i = 0; i < notesArray.length; i++) {
+      if (notesArray[i].title === clickedItem.textContent) {
+        textArea.value = notesArray[i].body;
+  };
+ };
+};  
+
+noteTitleList.addEventListener("click", checkBody);
