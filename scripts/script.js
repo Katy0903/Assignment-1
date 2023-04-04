@@ -62,9 +62,18 @@ const notesArray = [
 // save note
 function saveNote() {
     const noteBody = textArea.value;
-    const noteTitle = prompt('Please enter the title of your note:');
+
+    // check if the titlename is existing
+    let noteTitle = '';
+    do {
+        noteTitle = prompt('Please enter the title of your note:');
+    } while (notesArray.some(note => note.title === noteTitle || noteTitle === ''));
+    
+    if (noteTitle === null) {
+        return;
+    };
   
-    if (noteTitle !== '' && noteBody !== '') {
+    if (noteTitle !== undefined && noteTitle !== '' && noteBody !== '') {
       
       newNote = {title: noteTitle, body: noteBody};
       notesArray.push(newNote);
