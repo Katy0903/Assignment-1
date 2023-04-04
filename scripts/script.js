@@ -1,3 +1,6 @@
+
+// change bg color
+
 const backGroundColor = document.querySelector(".darkb")
 
 function turnDarkTheme () {
@@ -13,9 +16,11 @@ function turnDarkTheme () {
   
 };
 
-
 backGroundColor.addEventListener("click", turnDarkTheme);
 
+
+
+// cancel button
 
 const cancelButton = document.querySelector(".cancelb")
 const saveButton = document.querySelector(".saveb")
@@ -29,3 +34,19 @@ function hideTextAreaandButton () {
 };
 
 cancelButton.addEventListener("click", hideTextAreaandButton);
+
+// new note button
+
+const newButton = document.querySelector(".newb")
+
+function showTextAreaandButton () {
+    if (textArea.classList.contains("hidden")) {
+    textArea.classList.remove("hidden");
+    saveButton.classList.remove("hidden");
+    cancelButton.classList.remove("hidden");
+    } else {
+        textArea.value = "" ; 
+    };
+};
+
+newButton.addEventListener("click", showTextAreaandButton);
